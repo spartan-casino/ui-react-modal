@@ -1,10 +1,11 @@
 var testmode = false;
 
 const config = {
-  infuraProvider: testmode
+  /*infuraProvider: testmode
     ? "https://rinkeby.infura.io/v3/eaea09908f364f03b4a30582fbd91e65"
-    : "https://eth-mainnet.alchemyapi.io/v2/k2--UT_xVVXMOvAyoxJYqtKhlmyBbqnX",
-  //infuraProvider: 'https://eth-mainnet.alchemyapi.io/v2/k2--UT_xVVXMOvAyoxJYqtKhlmyBbqnX',
+    : "https://eth-mainnet.alchemyapi.io/v2/k2--UT_xVVXMOvAyoxJYqtKhlmyBbqnX",*/
+
+  infuraProvider: "https://bsc-dataseed1.binance.org:443",
   //infuraProvider: 'https://ropsten.infura.io/v3/eaea09908f364f03b4a30582fbd91e65',
 
   statsProvider: "https://api.yearn.tools/",
