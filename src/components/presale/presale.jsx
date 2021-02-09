@@ -257,7 +257,7 @@ const styles = (theme) => ({
     height: "60px",
     display: "flex",
     alignItems: "center",
-    backgroundColor: "#ffce47",
+    backgroundColor: "#f3ba2f",
     justifyContent: "center",
     textTransform: "uppercase",
     textAlign: "center",
@@ -265,7 +265,7 @@ const styles = (theme) => ({
   buyModal: {
     width: "100%",
     display: "flex",
-    backgroundColor: "#7b173a",
+    backgroundColor: "black",
     filter: "drop-shadow(0px 3px 28.5px rgba(0,0,0,0.68))",
     color: colors.white,
     padding: "20px 30px 60px",
@@ -317,27 +317,27 @@ const styles = (theme) => ({
   actionButton: {
     color: colors.black,
     borderRadius: "0px",
-    backgroundColor: "#ebbe41",
-    borderColor: "#ebbe41 !important",
+    backgroundColor: "#f3ba2f",
+    borderColor: "#f3ba2f !important",
     marginTop: "20px",
     width: "50%",
     "&:hover": {
       border: "1px solid",
       borderColor: "white !important",
-      backgroundColor: "#ebbe41",
+      backgroundColor: "#f3ba2f",
     },
   },
 
   actionButtonDisabled: {
     color: colors.black,
     borderRadius: "0px",
-    backgroundColor: "#ebbe41",
-    borderColor: "#ebbe41 !important",
+    backgroundColor: "#f3ba2f",
+    borderColor: "#f3ba2f !important",
     marginTop: "20px",
     "&:hover": {
       border: "1px solid",
       borderColor: "white !important",
-      backgroundColor: "#ebbe41",
+      backgroundColor: "#f3ba2f",
     },
   },
 
@@ -422,6 +422,7 @@ const styles = (theme) => ({
 
   footer: {
     margin: "30px 0 20px",
+    color: "white"
   },
 });
 
@@ -584,21 +585,13 @@ class Presale extends Component {
         <div className={classes.investedContainer}>
           <div className={classes.portfolioContainer}>
             <div className={classes.titleBalance}>
-              <div className={classes.contribute}>
-                <Typography
-                  variant={"h2"}
-                  style={{ color: "#ffce47", fontWeight: "300" }}
-                >
-                  The War Presale
-                </Typography>
-              </div>
               {/*<div className={classes.contract}>
                 <Typography variant={"h3"}>
                   The contract is for direct uniswap liquidity only
                 </Typography>
               </div>*/}
               <div className={classes.token}>
-                <Typography variant={"h3"}>Buy War tokens</Typography>
+                <Typography variant={"h3"}>BUY WAR TOKENS WITH BNB NOW!</Typography>
               </div>
               <div className={classes.buyModal}>
                 <div className={classes.buyModalImage}>
@@ -637,9 +630,6 @@ class Presale extends Component {
                   />
                   <Typography variant={"h3"} style={{ color: "#fff" }}>
                     Buy Price: 1/833 BNB | 1 WAR
-                  </Typography>
-                  <Typography variant={"h4"} style={{ color: "#fff" }}>
-                    Gas Fee: {this.state.gasPrice} BNB
                   </Typography>
                   <Typography
                     variant={"h4"}
